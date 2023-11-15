@@ -30,6 +30,8 @@ namespace WebSiteStatus
         {
             _httpClient.Dispose();
 
+            _logger.LogInformation("Service has been stopped...");
+
             return base.StopAsync(cancellationToken);
         }
 
